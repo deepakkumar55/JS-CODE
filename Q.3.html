@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Length Calculator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    #calculator {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="button"] {
+      width: auto;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+
+    #result {
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="calculator">
+    <h1>Length Calculator</h1>
+    <form>
+      <label>Enter Length:</label>
+      <input type="text" id="lengthInput">
+      <br><br>
+      <label>From Unit:</label>
+      <select id="fromUnit">
+        <option value="inches">Inches</option>
+        <option value="centimeters">Centimeters</option>
+        <option value="feet">Feet</option>
+        <option value="meters">Meters</option>
+      </select>
+      <br><br>
+      <label>To Unit:</label>
+      <select id="toUnit">
+        <option value="inches">Inches</option>
+        <option value="centimeters">Centimeters</option>
+        <option value="feet">Feet</option>
+        <option value="meters">Meters</option>
+      </select>
+      <br><br>
+      <input type="button" value="Calculate" onclick="calculateLength()">
+      <br><br>
+      <label>Result:</label>
+      <input type="text" id="result" disabled>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script src="./Q.3.js"></script>
+</body>
+</html>
